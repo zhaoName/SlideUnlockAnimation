@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE8E25BE1DE58AAE001D7FDC /* SlideAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E25BD1DE58AAE001D7FDC /* SlideAnimationView.m */; };
 		FEB72F0A1D1BE78A00915C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB72F091D1BE78A00915C2C /* main.m */; };
 		FEB72F0D1D1BE78A00915C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB72F0C1D1BE78A00915C2C /* AppDelegate.m */; };
 		FEB72F101D1BE78A00915C2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB72F0F1D1BE78A00915C2C /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE8E25BC1DE58AAE001D7FDC /* SlideAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideAnimationView.h; sourceTree = "<group>"; };
+		FE8E25BD1DE58AAE001D7FDC /* SlideAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideAnimationView.m; sourceTree = "<group>"; };
 		FEB72F051D1BE78A00915C2C /* SlideUnlockAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideUnlockAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB72F091D1BE78A00915C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEB72F0B1D1BE78A00915C2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,9 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE8E25BB1DE58A96001D7FDC /* SlideAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E25BC1DE58AAE001D7FDC /* SlideAnimationView.h */,
+				FE8E25BD1DE58AAE001D7FDC /* SlideAnimationView.m */,
+			);
+			path = SlideAnimation;
+			sourceTree = "<group>";
+		};
 		FEB72EFC1D1BE78A00915C2C = {
 			isa = PBXGroup;
 			children = (
+				FE8E25BB1DE58A96001D7FDC /* SlideAnimation */,
 				FEB72F071D1BE78A00915C2C /* SlideUnlockAnimation */,
 				FEB72F061D1BE78A00915C2C /* Products */,
 			);
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					FEB72F041D1BE78A00915C2C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 68JDS85SLB;
 					};
 				};
 			};
@@ -152,6 +166,7 @@
 				FEB72F101D1BE78A00915C2C /* ViewController.m in Sources */,
 				FEB72F0D1D1BE78A00915C2C /* AppDelegate.m in Sources */,
 				FEB72F0A1D1BE78A00915C2C /* main.m in Sources */,
+				FE8E25BE1DE58AAE001D7FDC /* SlideAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SlideUnlockAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Eman.SlideUnlockAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SlideUnlockAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Eman.SlideUnlockAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -300,6 +321,7 @@
 				FEB72F1E1D1BE78A00915C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
